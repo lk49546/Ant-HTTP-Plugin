@@ -1,0 +1,16 @@
+hr\fina\ci\ant\http\client\HttpResponse$1.class
+hr\fina\ci\ant\http\client\HttpPOSTClient.class
+hr\fina\ci\ant\http\client\HttpPOSTClient$1.class
+hr\fina\ci\ant\http\task\CredentialsNode.class
+hr\fina\ci\ant\http\task\HttpPostTask.class
+hr\fina\ci\ant\http\task\HeadersNode.class
+hr\fina\ci\ant\http\client\HttpResponse$HttpResponseBuilder.class
+hr\fina\ci\ant\http\client\HttpPOSTClient$HttpPOSTClientBuilder.class
+hr\fina\ci\ant\http\task\ParamsNode.class
+hr\fina\ci\ant\http\client\FilePackage.class
+hr\fina\ci\ant\http\task\FileNode.class
+hr\fina\ci\ant\http\task\HeaderNode.class
+hr\fina\ci\ant\http\client\HttpResponse.class
+hr\fina\ci\ant\http\task\ParamNode.class
+hr\fina\ci\ant\http\task\Validable.class
+hr\fina\ci\ant\http\client\HttpClient.class

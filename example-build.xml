@@ -1,0 +1,39 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<project name="sui-http-post" basedir="." default="http-post">
+
+  <property name="AntHttpPost-jar" value="Ant-HTTP-Plugin-0.0.1-SNAPSHOT-jar-with-dependencies.jar"/>
+
+  <fileset id="runtime.libs" dir=".">
+    <include name="${AntHttpPost-jar}"/>
+  </fileset>
+  
+  <path id="runtime.classpath">
+    <fileset refid="runtime.libs"/>
+  </path>
+
+  <taskdef name="httpPost" classname="hr.fina.ci.ant.http.task.HttpPostTask">
+    <classpath refid="runtime.classpath"/>
+  </taskdef>
+  
+  
+
+  
+<target name="http-post">
+  <property name="toilet"><![CDATA[https://ptsv2.com/t/wx350-1547647658/post]]></property>
+  <property name="userfile" location="D:\Users\lkelava\Downloads\ml-ant-http-1.1.3\nesto.zip" />
+
+  <httpPost url="${toilet}">
+    <credentials username="user123" password="*********"/>
+	<params>
+		<param name="sifGrupe" value="hr.fina.grupa"/>
+		<param name="sifArtefakta" value="primjer"/>
+		<param name="idGrupe" value="12345"/>
+		<param name="idArtefakta" value="12345"/>
+		<param name="classifier" value="isporuka"/>
+		<param name="verzija" value="1.0.0"/>
+	</params>
+	<file name="userfile.zip" file="${userfile}" />
+  </httpPost>
+</target>
+  
+</project>	
